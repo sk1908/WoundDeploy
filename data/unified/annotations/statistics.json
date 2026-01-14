@@ -1,0 +1,47 @@
+{
+  "azh_images": 930,
+  "medetec_images": 594,
+  "total_images": 1524,
+  "class_distribution": {
+    "diabetic": {
+      "train": 186,
+      "val": 40,
+      "test": 41
+    },
+    "venous": {
+      "train": 267,
+      "val": 57,
+      "test": 58
+    },
+    "pressure": {
+      "train": 215,
+      "val": 46,
+      "test": 47
+    },
+    "surgical": {
+      "train": 159,
+      "val": 34,
+      "test": 35
+    },
+    "normal": {
+      "train": 70,
+      "val": 15,
+      "test": 15
+    },
+    "background": {
+      "train": 70,
+      "val": 15,
+      "test": 15
+    },
+    "other": {
+      "train": 97,
+      "val": 20,
+      "test": 22
+    }
+  },
+  "split_distribution": {
+    "train": 1064,
+    "val": 227,
+    "test": 233
+  }
+}

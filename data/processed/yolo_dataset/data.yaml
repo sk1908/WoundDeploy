@@ -1,0 +1,7 @@
+names:
+  0: wound
+nc: 1
+path: C:\Users\skgin\Downloads\majorer\data\processed\yolo_dataset
+test: images/test
+train: images/train
+val: images/val
