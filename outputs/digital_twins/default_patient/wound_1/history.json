@@ -1,0 +1,26 @@
+{
+  "patient_id": "default_patient",
+  "wound_id": "wound_1",
+  "states": [
+    {
+      "timestamp": "2026-01-14T11:31:44.196967",
+      "image_hash": "29d345e4e84229a2",
+      "wound_type": "diabetic",
+      "severity": "severe",
+      "risk_level": "high",
+      "risk_score": 0.571158615371741,
+      "tissue_percentages": {
+        "background": 61.938398651798195,
+        "granulation": 50.6547338671691,
+        "slough": 7.649552520018841,
+        "necrotic": 41.54498351389543,
+        "epithelium": 0.15073009891662742
+      },
+      "wound_area": 8080.0,
+      "wound_volume": 5897.87158203125,
+      "mean_depth": 0.5564554929733276,
+      "healthy_ratio": 0.5073120105670347,
+      "necrotic_burden": 0.4926879894329654
+    }
+  ]
+}
