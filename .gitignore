@@ -1,0 +1,68 @@
+# Digital Twin Wound Analysis - Deployment
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model weights (hosted on HuggingFace)
+weights/
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# Data (too large for deployment)
+data/
+outputs/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+wandb/
+runs/
+lightning_logs/
+
+# Local config
+.env
+secrets.toml
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Keep these
+!.streamlit/
+!requirements.txt

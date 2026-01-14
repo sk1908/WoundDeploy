@@ -37,6 +37,41 @@ for dir_path in [WEIGHTS_DIR, OUTPUT_DIR, CACHE_DIR, PROCESSED_DIR, UNIFIED_DIR]
     dir_path.mkdir(parents=True, exist_ok=True)
 
 # ============================================================================
+# CLOUD DEPLOYMENT: Download weights from HuggingFace if not found locally
+# ============================================================================
+
+# HuggingFace repository for model weights
+HUGGINGFACE_REPO = "sk1908/wound-analysis-weights"
+
+def _check_and_download_weights():
+    """Check if weights exist, download from HuggingFace if missing."""
+    import os
+    
+    # Skip download check in training mode or if explicitly disabled
+    if os.environ.get("SKIP_WEIGHT_DOWNLOAD"):
+        return
+        
+    required_weights = [
+        "yolo_wound_detection.pt",
+        "segmentation_model.pt",
+        "classification_model.pt",
+    ]
+    
+    missing = [w for w in required_weights if not (WEIGHTS_DIR / w).exists()]
+    
+    if missing:
+        print(f"[Config] Missing weights: {missing}")
+        try:
+            from utils.download_weights import download_weights
+            download_weights()
+        except Exception as e:
+            print(f"[Config] Weight download failed: {e}")
+            print("[Config] Continuing without pre-downloaded weights...")
+
+# Auto-download weights when config is imported (for Streamlit Cloud)
+_check_and_download_weights()
+
+# ============================================================================
 # DEVICE CONFIGURATION
 # ============================================================================
 
