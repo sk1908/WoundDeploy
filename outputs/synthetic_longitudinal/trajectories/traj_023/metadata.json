@@ -1,0 +1,119 @@
+{
+  "trajectory_id": "traj_023",
+  "pseudo_patient_id": "pseudo_patient_023",
+  "num_frames": 7,
+  "frames": [
+    {
+      "frame_idx": 0,
+      "original_filename": "IMG944.jpg",
+      "image_id": 741,
+      "healing_stage": 3,
+      "severity_level": 1,
+      "day": 0,
+      "timestamp": "2024-01-01T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.6651506010117417,
+        "slough": 0.028619606751133182,
+        "necrotic": 0.24895963861945206,
+        "epithelium": 0.05727015361767299
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 1,
+      "original_filename": "IMG452.jpg",
+      "image_id": 501,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 7,
+      "timestamp": "2024-01-08T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.45897777997397504,
+        "slough": 0.11200606150450496,
+        "necrotic": 0.12663273541862266,
+        "epithelium": 0.30238342310289734
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 2,
+      "original_filename": "IMG830.jpg",
+      "image_id": 687,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 14,
+      "timestamp": "2024-01-15T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.9606832640078297,
+        "slough": 0.0038230976266209935,
+        "necrotic": 0.0010245901639344263,
+        "epithelium": 0.03446904820161488
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 3,
+      "original_filename": "IMG895.jpg",
+      "image_id": 720,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 18,
+      "timestamp": "2024-01-19T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.6780914716760043,
+        "slough": 0.005126515068292504,
+        "necrotic": 0.12151671610091912,
+        "epithelium": 0.19526529715478413
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 4,
+      "original_filename": "IMG939.jpg",
+      "image_id": 737,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 12,
+      "timestamp": "2024-01-13T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.5121137036272283,
+        "slough": 0.0683804804184734,
+        "necrotic": 0.0425872393144745,
+        "epithelium": 0.3769185766398238
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 5,
+      "original_filename": "IMG948.jpg",
+      "image_id": 743,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 15,
+      "timestamp": "2024-01-16T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.480303566260411,
+        "slough": 0.08722706370389427,
+        "necrotic": 0.08864199118886067,
+        "epithelium": 0.3438273788468341
+      },
+      "wound_area_ratio": 0.25
+    },
+    {
+      "frame_idx": 6,
+      "original_filename": "IMG957.jpg",
+      "image_id": 748,
+      "healing_stage": 1,
+      "severity_level": 3,
+      "day": 30,
+      "timestamp": "2024-01-31T00:00:00",
+      "tissue_ratios": {
+        "granulation": 0.7612240094154571,
+        "slough": 0.03300117693213025,
+        "necrotic": 0.0015849352687328363,
+        "epithelium": 0.20418987838367988
+      },
+      "wound_area_ratio": 0.25
+    }
+  ]
+}
