@@ -12,7 +12,8 @@ from tqdm import tqdm
 # HuggingFace repository containing the model weights
 # Format: "username/repo-name"
 HUGGINGFACE_REPO = os.environ.get("HF_REPO", "sk1908/wound-analysis-weights")
-HF_BASE_URL = f"https://huggingface.co/{HUGGINGFACE_REPO}/resolve/main"
+# Files are stored in 'weights/' subfolder on HuggingFace
+HF_BASE_URL = f"https://huggingface.co/{HUGGINGFACE_REPO}/resolve/main/weights"
 
 # Model files to download
 MODEL_FILES = [
