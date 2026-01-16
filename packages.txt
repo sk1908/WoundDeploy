@@ -1,4 +1,2 @@
-# System packages for Streamlit Cloud
-# Fixes: libGL.so.1 not found error from OpenCV
 libgl1-mesa-glx
 libglib2.0-0
