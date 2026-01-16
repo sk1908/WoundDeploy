@@ -267,8 +267,7 @@ class Wound3DVisualizer:
             surfacecolor=Z,
             colorscale='RdYlBu_r',  # Red (deep) to Blue (shallow)
             colorbar=dict(
-                title="Depth",
-                titlefont=dict(color='white'),
+                title=dict(text="Depth", font=dict(color='white')),
                 tickfont=dict(color='white'),
                 len=0.5
             ),

@@ -699,7 +699,14 @@ if page == "🔬 Analyze Wound":
                             title="Tissue Composition",
                             color_discrete_sequence=px.colors.qualitative.Set3
                         )
-                        fig.update_layout(height=300)
+                        fig.update_layout(
+                            height=300,
+                            paper_bgcolor='rgba(0,0,0,0)',
+                            plot_bgcolor='rgba(0,0,0,0)',
+                            font=dict(color='white'),
+                            title_font=dict(color='white'),
+                            legend=dict(font=dict(color='white'))
+                        )
                         st.plotly_chart(fig, use_container_width=True)
             
             with col2:
