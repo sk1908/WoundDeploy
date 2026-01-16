@@ -80,10 +80,34 @@ st.markdown("""
     /* ===== TYPOGRAPHY ===== */
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Outfit', sans-serif !important;
+        color: #f8fafc !important;
     }
     
-    p, span, label, .stMarkdown {
+    p, span, label, .stMarkdown, li, strong, em, b {
         font-family: 'Inter', sans-serif !important;
+        color: #e2e8f0 !important;
+    }
+    
+    /* Main content text visibility */
+    .main p, .main span, .main li, .main label {
+        color: #e2e8f0 !important;
+    }
+    
+    .main h1, .main h2, .main h3, .main h4 {
+        color: #f8fafc !important;
+    }
+    
+    .stMarkdown p, .stMarkdown li, .stMarkdown span {
+        color: #e2e8f0 !important;
+    }
+    
+    .stCaption, .stCaption p {
+        color: #94a3b8 !important;
+    }
+    
+    /* Write/text outputs */
+    .stWrite, [data-testid="stText"] {
+        color: #e2e8f0 !important;
     }
     
     .main-header {
