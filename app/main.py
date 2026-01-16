@@ -197,12 +197,20 @@ st.markdown("""
         border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
     
-    [data-testid="stSidebar"] .stMarkdown h1 {
-        color: white;
+    [data-testid="stSidebar"] * {
+        color: #e2e8f0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stMarkdown h1,
+    [data-testid="stSidebar"] .stMarkdown h2,
+    [data-testid="stSidebar"] .stMarkdown h3 {
+        color: white !important;
         font-family: 'Outfit', sans-serif !important;
     }
     
-    [data-testid="stSidebar"] .stRadio > label {
+    [data-testid="stSidebar"] .stRadio > label,
+    [data-testid="stSidebar"] .stRadio label,
+    [data-testid="stSidebar"] label {
         color: #e2e8f0 !important;
     }
     
@@ -210,20 +218,40 @@ st.markdown("""
         gap: 0.5rem;
     }
     
-    [data-testid="stSidebar"] [role="radiogroup"] label {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+    [data-testid="stSidebar"] [role="radiogroup"] label,
+    [data-testid="stSidebar"] .stRadio [role="radiogroup"] label {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
         border-radius: 12px;
         padding: 0.75rem 1rem;
         margin: 0.25rem 0;
         transition: all 0.3s ease;
-        color: #e2e8f0;
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] [role="radiogroup"] label p,
+    [data-testid="stSidebar"] [role="radiogroup"] label span,
+    [data-testid="stSidebar"] [role="radiogroup"] label div {
+        color: #ffffff !important;
     }
     
     [data-testid="stSidebar"] [role="radiogroup"] label:hover {
-        background: rgba(99, 102, 241, 0.2);
-        border-color: rgba(99, 102, 241, 0.5);
+        background: rgba(99, 102, 241, 0.3) !important;
+        border-color: rgba(99, 102, 241, 0.5) !important;
         transform: translateX(5px);
+    }
+    
+    /* Sidebar text inputs and expanders */
+    [data-testid="stSidebar"] .stTextInput label,
+    [data-testid="stSidebar"] .stExpander summary,
+    [data-testid="stSidebar"] .stExpander p,
+    [data-testid="stSidebar"] .stCheckbox label {
+        color: #e2e8f0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stCaption,
+    [data-testid="stSidebar"] small {
+        color: #94a3b8 !important;
     }
     
     /* ===== BUTTONS ===== */
